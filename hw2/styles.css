@@ -1,0 +1,132 @@
+body {
+  background-color: #495D6A;
+  font-family: Open Sans;
+  margin: 0;
+}
+
+/* navbar */
+.navbar-container {
+  height: 100px;
+  background-color: #36454F;
+  border-bottom-style: solid; 
+  border-bottom-width: 4px; 
+  border-bottom-color: #7DF9FF;
+}
+.navbar-sub-container {
+  height: 100%;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin: auto;
+}
+.home-button {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  /* media screen margin-left */
+}
+.link {
+  text-decoration: none;
+}
+.logo-com {
+  font-size: xx-large;
+  font-weight: 800;
+  color: white;
+}
+.logo-pair {
+  font-size: xx-large;
+  font-weight: 800;
+  color: #7DF9FF;
+}
+.nav-container {
+  display: flex; 
+  justify-content: space-between; 
+  right: 0; 
+  align-items: center; 
+  margin-right: 50px; 
+  width: 210px
+  /* media screen margin-right */
+}
+.nav-link {
+  font-size: medium; 
+  font-weight: 600; 
+  color: white;
+}
+.nav-button {
+  text-decoration: none; 
+  width: 120px; 
+  height: 45px; 
+  background-color: white; 
+  border-radius: 10px; 
+  display: flex;
+}
+.nav-button-text {
+  font-size: medium; 
+  font-weight: 800; 
+  color: #36454F; 
+  margin: auto;
+}
+
+/* footer */
+.footer-container {
+  background-color: #36454F;
+  border-top-style: solid; 
+  border-top-width: 4px; 
+  border-top-color: #7DF9FF; 
+}
+.footer-sub-container {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 300px;
+  margin: auto;
+  /* justify-content: space-between; */
+}
+.footer-logo {
+  display: flex;
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section-container {
+  width: 300px;
+  height: 120px;
+  margin: auto;
+  /* background-color: #7DF9FF; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-section-header {
+  height: 100px;
+  margin-bottom: 15px;
+  font-size: large;
+  font-weight: 800;
+  /* text-decoration: underline; */
+  color: white;
+}
+.footer-contact-button {
+  width: 200px;
+  border: 2px solid #7DF9FF;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #36454F;
+  font-family: Open Sans;
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+}
+.footer-contact-button:hover {
+  background-color: #7DF9FF;
+  color: #36454F;
+  cursor: pointer;
+}
+.footer-contact-button:active {
+  background-color: #36454F;
+  color: white;
+  cursor: pointer;
+}
