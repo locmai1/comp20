@@ -8,13 +8,11 @@ body {
 .navbar-container {
   height: 100px;
   background-color: #36454F;
-  border-bottom-style: solid; 
-  border-bottom-width: 4px; 
-  border-bottom-color: #7DF9FF;
+  border-bottom: 4px solid #7DF9FF; 
 }
 .navbar-sub-container {
   height: 100%;
-  display: flex; 
+  display: flex;
   flex-direction: row; 
   justify-content: space-between; 
   margin: auto;
@@ -23,7 +21,15 @@ body {
   display: flex;
   align-items: center;
   margin-left: 50px;
-  /* media screen margin-left */
+
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    margin-left: 10px;
+  }
 }
 .link {
   text-decoration: none;
@@ -32,25 +38,63 @@ body {
   font-size: xx-large;
   font-weight: 800;
   color: white;
+
+  @media only screen and (max-width: 768px) {
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: large; 
+    font-weight: 600;
+  }
 }
 .logo-pair {
   font-size: xx-large;
   font-weight: 800;
   color: #7DF9FF;
+
+  @media only screen and (max-width: 768px) {
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: large; 
+    font-weight: 600;
+  }
 }
 .nav-container {
   display: flex; 
   justify-content: space-between; 
-  right: 0; 
   align-items: center; 
   margin-right: 50px; 
-  width: 210px
-  /* media screen margin-right */
+  gap: 20px;
+
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    margin-right: 20px;
+    gap: 12px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    margin-right: 10px;
+    gap: 7px;
+  }
 }
 .nav-link {
   font-size: medium; 
   font-weight: 600; 
   color: white;
+
+  /* Mobile */
+  @media only screen and (max-width: 320px) {
+    font-size: small;
+    font-weight: 400;
+  }
+}
+.nav-link:hover {
+  color: #7DF9FF;
 }
 .nav-button {
   text-decoration: none; 
@@ -59,20 +103,33 @@ body {
   background-color: white; 
   border-radius: 10px; 
   display: flex;
+
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    width: 110px;
+    height: 35px;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    width: 90px;
+  }
 }
 .nav-button-text {
   font-size: medium; 
   font-weight: 800; 
   color: #36454F; 
   margin: auto;
+
+  @media only screen and (max-width: 320px) {
+    font-size: small;
+    font-weight: 600;
+  }
 }
 
 /* footer */
 .footer-container {
   background-color: #36454F;
-  border-top-style: solid; 
-  border-top-width: 4px; 
-  border-top-color: #7DF9FF; 
+  border-top: 4px solid #7DF9FF; 
 }
 .footer-sub-container {
   display: flex;
@@ -80,7 +137,12 @@ body {
   width: 1000px;
   height: 300px;
   margin: auto;
-  /* justify-content: space-between; */
+  
+  @media only screen and (max-width: 768px) {
+    display: block;
+    height: 450px;
+    width: 290px;
+  }
 }
 .footer-logo {
   display: flex;
@@ -89,6 +151,12 @@ body {
   margin: auto;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 30px;
+    width: 280px;
+    height: 100px;
+  }
 }
 .footer-section-container {
   width: 300px;
@@ -100,6 +168,13 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+
+  @media only screen and (max-width: 768px) {
+    width: 280px;
+    height: 150px;
+    justify-content: center;
+    gap: 5px;
+  }      
 }
 .footer-section-header {
   height: 100px;
@@ -108,6 +183,11 @@ body {
   font-weight: 800;
   /* text-decoration: underline; */
   color: white;
+
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+    margin-bottom: 0;
+  }
 }
 .footer-contact-button {
   width: 200px;
