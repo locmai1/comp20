@@ -9,41 +9,486 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet">
   <title>Compair</title>
+  <style>
+    body {
+      background-color: #495D6A;
+      font-family: Open Sans;
+      margin: 0;
+    }
+
+    /* navbar */
+    .navbar-container {
+      height: 100px;
+      background-color: #36454F;
+      border-bottom-style: solid; 
+      border-bottom-width: 4px; 
+      border-bottom-color: #7DF9FF;
+    }
+    .navbar-sub-container {
+      height: 100%;
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      margin: auto;
+    }
+    .home-button {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      /* media screen margin-left */
+    }
+    .link {
+      text-decoration: none;
+    }
+    .logo-com {
+      font-size: xx-large;
+      font-weight: 800;
+      color: white;
+    }
+    .logo-pair {
+      font-size: xx-large;
+      font-weight: 800;
+      color: #7DF9FF;
+    }
+    .nav-container {
+      display: flex; 
+      justify-content: space-between; 
+      right: 0; 
+      align-items: center; 
+      margin-right: 50px; 
+      width: 210px
+      /* media screen margin-right */
+    }
+    .nav-link {
+      font-size: medium; 
+      font-weight: 600; 
+      color: white;
+    }
+    .nav-button {
+      text-decoration: none; 
+      width: 120px; 
+      height: 45px; 
+      background-color: white; 
+      border-radius: 10px; 
+      display: flex;
+    }
+    .nav-button-text {
+      font-size: medium; 
+      font-weight: 800; 
+      color: #36454F; 
+      margin: auto;
+    }
+
+    /* hero */
+    .hero-container {
+      display: flex; 
+      justify-content: space-between; 
+      width: 100%; 
+      height: 800px; 
+      border-bottom-style: solid; 
+      border-bottom-width: 4px; 
+      border-bottom-color: #7DF9FF;
+    }
+    .hero-cta-container {
+      width: 800px; 
+      height: 160px; 
+      display: flex; 
+      margin: auto; 
+      display: flex; 
+      flex-direction: column; 
+      text-align: center; 
+      z-index: 50;
+    }
+    .hero-cta-subheading {
+      margin: auto;
+      font-size: xx-large; 
+      font-weight: 700; 
+      color: white;
+    }
+    .hero-cta-supporting {
+      margin: auto; 
+      font-size: medium; 
+      font-weight: 500; 
+      color: #7DF9FF;
+    }
+    .hero-cta-button {
+      border-radius: 10px; 
+      width: 200px; 
+      height: 60px; 
+      margin: auto; 
+      margin-top: 20px; 
+      background-color: #36454F; 
+      border-style: solid; 
+      border-width: 4px; 
+      border-color: #7DF9FF; 
+      text-decoration: none; 
+      display: flex;
+    }
+    .hero-cta-button-text {
+      color: white; 
+      font-size: large; 
+      font-weight: 800; 
+      margin: auto;
+    }
+    .hero-background {
+      opacity: 25%; 
+      position: absolute; 
+      z-index: 10;
+    }
+
+    /* services */
+    .services-container {
+      display: flex; 
+      flex-direction: column; 
+      width: 100%; 
+      height: 500px; 
+      border-bottom-width: 4px; 
+      border-bottom-color: #7DF9FF; 
+      border-bottom-style: solid; 
+    }
+    .services-header {
+      font-size: 37pt; 
+      color: white; 
+      font-weight: 600; 
+      margin: auto; 
+      margin-top: 70px;
+    }
+    .services-sub-container {
+      width: 60%; 
+      height: 100%; 
+      margin: auto; 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+    .services-info-container {
+      margin: auto; 
+      width: 60%; 
+      height: 250px
+    }
+    .services-text {
+      color: #7DF9FF; 
+      font-size: large; 
+      font-weight: 300;
+    }
+    .services-button {
+      border-radius: 10px; 
+      width: 200px; 
+      height: 60px; 
+      margin-top: 30px; 
+      background-color: #36454F; 
+      border-style: solid; 
+      border-width: 4px; 
+      border-color: #7DF9FF; 
+      text-decoration: none; 
+      display: flex;
+    }
+    .services-button-text {
+      color: white; 
+      font-size: large; 
+      font-weight: 800; 
+      margin: auto;
+    }
+    .services-image {
+      margin: auto; 
+      border-radius: 10px;
+    }
+
+    /* reviews */
+    .reviews-container {
+      display: flex; 
+      flex-direction: column; 
+      width: 100%; 
+      height: 750px;
+      text-align: center;
+    }
+    .reviews-header {
+      font-size: 37pt; 
+      color: white; 
+      font-weight: 600; 
+      margin: auto; 
+      margin-top: 70px;
+    }
+    .reviews-customers-container {
+      width: 1000px; 
+      height: 500px; 
+      margin: auto; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      margin-bottom: 70px;
+    }
+    .reviews-customers-row {
+      width: 100%; 
+      height: 300px; 
+      margin-top: 20px; 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+    .reviews-customer-container {
+      width: 460px; 
+      height: 190px; 
+      border-radius: 10px; 
+      border-style: solid; 
+      border-width: 4px; 
+      border-color: #7DF9FF;
+    }
+    .reviews-customer-profile-container {
+      padding: 30px; 
+      display: flex; 
+      flex-direction: row;
+    }
+    .reviews-customer-icon {
+      width: 100px; 
+      height: 100px; 
+      border-radius: 9999px; 
+      margin: auto;
+      font-size: 55pt;
+    }
+    .reviews-customer-response {
+      width: 270px; 
+      margin-left: 30px; 
+      display: flex; 
+      flex-direction: column; 
+      text-align: start; 
+      justify-content: center;
+    }
+    .reviews-customer-name {
+      font-size: large; 
+      font-weight: 600; 
+      color: white;
+    }
+    .reviews-customer-type {
+      margin-top: 5px; 
+      font-size: medium; 
+      font-weight: 600; 
+      color: black;
+    }
+    .reviews-customer-text {
+      color: #7DF9FF; 
+      font-size: small; 
+      font-weight: 300;
+    }
+
+    /* footer */
+    .footer-container {
+      background-color: #36454F;
+      border-top-style: solid; 
+      border-top-width: 4px; 
+      border-top-color: #7DF9FF; 
+    }
+    .footer-sub-container {
+      display: flex;
+      flex-direction: row;
+      width: 1000px;
+      height: 300px;
+      margin: auto;
+      /* justify-content: space-between; */
+    }
+    .footer-logo {
+      display: flex;
+      width: 300px;
+      height: 250px;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-section-container {
+      width: 300px;
+      height: 120px;
+      margin: auto;
+      /* background-color: #7DF9FF; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .footer-section-header {
+      height: 100px;
+      margin-bottom: 15px;
+      font-size: large;
+      font-weight: 800;
+      /* text-decoration: underline; */
+      color: white;
+    }
+    .footer-contact-button {
+      width: 200px;
+      border: 2px solid #7DF9FF;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #36454F;
+      font-family: Open Sans;
+      color: white;
+      font-weight: 500;
+      font-size: medium;
+    }
+    .footer-contact-button:hover {
+      background-color: #7DF9FF;
+      color: #36454F;
+      cursor: pointer;
+    }
+    .footer-contact-button:active {
+      background-color: #36454F;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
-<body style="margin: 0; font-family: Open Sans;">
+<body>
   <!-- navbar -->
-  <div class=""
-    style="width: 100vw; background-color: #36454F; height: 80px; top: 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);">
-    <!-- navigation -->
-    <div class=""
-      style="height: 100%; display: flex; flex-direction: row; justify-content: space-between; margin: auto;">
-      <!-- home button -->
-      <div class="" style="display: flex; align-items: center; margin-left: 50px;">
-        <a href="#" class="" style="text-decoration: none;">
-          <span class="" style="font-size: x-large; font-weight: 700; color: white;">
-            Com<span class="" style="font-size: x-large; font-weight: 700; color: #7DF9FF;">pair</span>
-          </span>
+  <section class="navbar-container">
+    <div class="navbar-sub-container">
+      <div class="home-button">
+        <a href="#" class="link">
+          <span class="logo-com">Com<span class="logo-pair">pair</span></span>
         </a>
       </div>
-      <!-- nav buttons -->
-      <div class=""
-        style="display: flex; justify-content: space-between; right: 0; align-items: center; margin-right: 50px; width: 210px">
-        <a href="#" class="" style="text-decoration: none;">
-          <span class="" style="font-size: medium; font-weight: 600; color: white;">Reviews</span>
+      <div class="nav-container">
+        <a href="#" class="link">
+          <span class="nav-link">Services</span>
         </a>
-        <a href="#" class=""
-          style="text-decoration: none; width: 120px; height: 45px; background-color: white; border-radius: 10px; display: flex;">
-          <span class="" style="font-size: medium; font-weight: 800; color: #36454F; margin: auto;">Contact Us</span>
+        <a href="#" class="nav-button">
+          <span class="nav-button-text">Contact Us</span>
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- mission/values -->
+  <!-- hero-->
+  <section class="hero-container">
+    <div class="hero-cta-container">
+      <span class="hero-cta-subheading">Your One-Stop Solution for Tech Troubles</span>
+      <span class="hero-cta-supporting">Compair to other services, our team of experts will solve your problems 50% faster and 70% cheaper.</span>
+      <a href="#" class="hero-cta-button">
+        <span class="hero-cta-button-text">Get a Quote!</span>
+      </a>
+    </div>
+    <img src="/comp20/hw2/img/hero.jpg" 
+      alt="hero background" 
+      class="hero-background" 
+      width="100%" 
+      height="800px"
+    />
+  </section>
+
+  <!-- services -->
+  <section class="services-container">
+    <span class="services-header">What We Offer</span>
+    <div class="services-sub-container">
+      <div class="services-info-container">
+        <p class="services-text">
+          Explore our essential tech services designed to optimize your digital experience. From virus removal to hardware upgrades, we ensure your devices run smoothly. Discover more by clicking below.
+        </p>
+        <a href="#" class="services-button">
+          <span class="services-button-text">View More!</span>
+        </a>
+      </div>
+      <img src="/comp20/hw2/img/macbook.jpg" 
+        alt="macbook repair" 
+        class="services-image" 
+        width="350px"
+      />
+    </div>
+  </section>
+
+  <!-- customer reviews -->
+  <section class="reviews-container">
+    <span class="reviews-header">What Our Customers Are Saying About Com<span style="color: #7DF9FF;">pair</span></span>
+    <div class="reviews-customers-container">
+      <!-- 1st row -->
+      <div class="reviews-customers-row">
+        <!-- customer 1 -->
+        <div class="reviews-customer-container">
+          <div class="reviews-customer-profile-container">
+            <span class="reviews-customer-icon">
+              👤
+            </span>
+            <div class="reviews-customer-response">
+              <span class="reviews-customer-name">John V.</span>
+              <span class="reviews-customer-type">PC Repair</span>
+              <p class="reviews-customer-text">
+                "The team at compair is a lifesaver! They recovered all my important data and got my laptop running like new. Thank you so much!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- customer 2 -->
+        <div class="reviews-customer-container">
+          <div class="reviews-customer-profile-container">
+            <span class="reviews-customer-icon">
+              👤
+            </span>
+            <div class="reviews-customer-response">
+              <span class="reviews-customer-name">Tyler T.</span>
+              <span class="reviews-customer-type">Macbook Repair</span>
+              <p class="reviews-customer-text">
+                "Outstanding expertise! compair resolved my network problem in no time. Professional and efficient service, I'll definitely be back."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="reviews-customers-row">
+        <!-- customer 3 -->
+        <div class="reviews-customer-container">
+          <div class="reviews-customer-profile-container">
+            <span class="reviews-customer-icon">
+              👤
+            </span>
+            <div class="reviews-customer-response">
+              <span class="reviews-customer-name">Kenney T.</span>
+              <span class="reviews-customer-type">PC Repair</span>
+              <p class="reviews-customer-text">
+                "Incredible service! compair fixed my computer faster than I expected. Highly recommended for any tech issues!" 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- customer 4 -->
+        <div class="reviews-customer-container">
+          <div class="reviews-customer-profile-container">
+            <span class="reviews-customer-icon">
+              👤
+            </span>
+            <div class="reviews-customer-response">
+              <span class="reviews-customer-name">Tu D.</span>
+              <span class="reviews-customer-type">iPhone Repair</span>
+              <p class="reviews-customer-text">
+                "Exceptional service! compair's expertise in solving tech problems is unmatched. I'm a happy and satisfied customer."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </section>
 
   <!-- footer -->
-  <div class="" style=""></div>
+  <section class="footer-container">
+    <div class="footer-sub-container">
+      <div class="footer-logo">
+        <span class="logo-com">Com<span class="logo-pair">pair</span></span>
+      </div>
+      <div class="footer-section-container" id="links">
+        <span class="footer-section-header">Quick Links</span>
+        <a href="#" class="link">
+          <span class="nav-link" style="color: #7DF9FF; text-decoration: underline;">Services</span>
+        </a>
+        <a href="#" class="link">
+          <span class="nav-link" style="color: #7DF9FF; text-decoration: underline;">Contact</span>
+        </a>
+      </div>
+      <div class="footer-section-container" id="contacts">
+        <span class="footer-section-header">Contact</span>
+        <button class="footer-contact-button" type="button">Call: 617.COM.PAIR</button>
+        <button class="footer-contact-button" type="button">Email: TBD</button>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
