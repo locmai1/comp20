@@ -30,6 +30,64 @@
     </div>
   </section>
 
+  <!-- form -->
+  <section class="form-section">
+    <span class="form-section-header">Contact Us</span>
+    <form class="form-container" action="#">
+      <div class="form-section-row">
+        <div class="form-section-input">
+          <label class="form-label-input" for="fname">First Name</label>
+          <input class="form-input" type="text" id="fname" name="fname" required>
+        </div>
+        <div class="form-section-input">
+          <label class="form-label-input" for="lname">Last Name</label>
+          <input class="form-input" type="text" id="lname" name="fname" required>
+        </div>
+      </div>
+      <div class="form-section-row">
+        <div class="form-section-input">
+          <label class="form-label-input" for="email">Email</label>
+          <input class="form-input" type="email" id="email" name="email" required>
+        </div>
+        <div class="form-section-input">
+          <label class="form-label-input" for="number">Number <span style="color:#7DF9FF">(Optional)</span></label>
+          <input class="form-input" type="number" id="number" name="number">
+        </div>
+      </div>
+      <div class="form-section-row">
+        <div class="form-section-input">
+          <label class="form-label-input" for="type">Type of Repair</label>
+          <select class="form-input" id="repairs" name="repairs" required>
+            <option value="PC Repair">PC Repair</option>
+            <option value="Macbook Repair">Macbook Repair</option>
+            <option value="IOS Repair">IOS Repair</option>
+            <option value="Android Repair">Android Repair</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-section-row">
+        <div class="form-section-input-full">
+          <label class="form-label-input" for="description">Description</label>
+          <textarea class="form-input" 
+            style="padding-top: 10px;" 
+            placeholder="What is wrong with your device?"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-section-row">
+        <div class="form-section-input-full">
+          <span class="form-com-text">By checking the box below, you agree to receive communication emails and texts from us.</span>
+          <input class="form-com-checkbox" type="checkbox" id="communication" name="communication" required>
+        </div>
+      </div>
+      <div class="form-section-row">
+        <button class="form-button" type="submit">Confirm</button>
+        <button class="form-button" type="reset">Clear</button>
+      </div>
+    </form>
+  </section>
+
   <!-- footer -->
   <section class="footer-container">
     <div class="footer-sub-container">
@@ -39,10 +97,10 @@
       <div class="footer-section-container" id="links">
         <span class="footer-section-header">Quick Links</span>
         <a href="#" class="link">
-          <span class="nav-link" style="color: #7DF9FF; text-decoration: underline;">Services</span>
+          <span class="footer-nav-link">Services</span>
         </a>
         <a href="#" class="link">
-          <span class="nav-link" style="color: #7DF9FF; text-decoration: underline;">Contact</span>
+          <span class="footer-nav-link">Contact</span>
         </a>
       </div>
       <div class="footer-section-container" id="contacts">

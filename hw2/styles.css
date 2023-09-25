@@ -114,6 +114,9 @@ body {
     width: 90px;
   }
 }
+.nav-button:hover {
+  background-color: #7DF9FF;
+}
 .nav-button-text {
   font-size: medium; 
   font-weight: 800; 
@@ -126,10 +129,152 @@ body {
   }
 }
 
+/* form */
+.form-section {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  @media only screen and (max-width: 1024px) {
+    pading: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 350px;
+    padding: 5px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 270px;
+  }
+}
+.form-section-header {
+  margin: auto;
+  font-size: 37pt;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 20pt;
+  }
+}
+.form-container {
+  width: 600px;
+  flex-direction: column;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #36454F;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  @media only screen and (max-width: 768px) {
+    width: 280px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 220px;
+  }
+}
+.form-section-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #36454F;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.form-section-input {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 10px;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 220px;
+  }
+}
+.form-section-input-full {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 10px;
+
+  @media only screen and (max-width: 768px) {
+    width: 280px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 220px;
+  }
+}
+.form-label-input {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+}
+.form-input {
+  height: 35px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  border: none;
+  color: #36454F;
+  font-family: Open Sans;
+}
+.form-com-text {
+  font-size: small;
+  font-weight: 500;
+  color: #495D6A;
+}
+.form-com-checkbox {
+  height: 15px;
+}
+.form-button {
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  border: 3px solid #7DF9FF;
+  background-color: #36454F;
+  font-size: large;
+  font-weight: 600;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 220px;
+  }
+}
+.form-button:hover {
+  background-color: #7DF9FF;
+  color: #36454F;
+  cursor: pointer;
+}
+
 /* footer */
 .footer-container {
   background-color: #36454F;
   border-top: 4px solid #7DF9FF; 
+  display: flex;
+  justify-content: center;
 }
 .footer-sub-container {
   display: flex;
@@ -137,6 +282,10 @@ body {
   width: 1000px;
   height: 300px;
   margin: auto;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
   
   @media only screen and (max-width: 768px) {
     display: block;
@@ -175,6 +324,13 @@ body {
     justify-content: center;
     gap: 5px;
   }      
+}
+.footer-nav-link {
+  color: #7DF9FF;
+  text-decoration: underline;
+}
+.footer-nav-link:hover {
+  color: white;
 }
 .footer-section-header {
   height: 100px;
