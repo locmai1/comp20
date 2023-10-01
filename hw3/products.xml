@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href = "style.css" ?>
+
+<products>
+
+  <product>
+    <name>Vintage Striped Button-Up Shirt</name>
+    <description>A stylish button-up shirt featuring classic stripes and a vintage look</description>
+    <categories>
+      <category>Clothing</category>
+      <category>Vintage</category>
+      <category>Casual</category>
+    </categories>
+    <price>$45</price>
+    <sizes>
+      <size>Small</size>
+      <size>Medium</size>
+      <size>Large</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Antique Brass Table Lamp</name>
+    <description>An elegant table lamp with an antique brass finish, adding a vintage touch to any room</description>
+    <categories>
+      <category>Home Decor</category>
+      <category>Vintage</category>
+      <category>Lighting</category>
+    </categories>
+    <price>$70</price>
+    <sizes>
+      <size>One Size</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Retro Polaroid Camera</name>
+    <description>A vintage-inspired instant camera for capturing memories in the iconic Polaroid style</description>
+    <categories>
+      <category>Electronics</category>
+      <category>Vintage</category>
+      <category>Photography</category>
+    </categories>
+    <price>$100</price>
+    <sizes>
+      <size>One Size</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Classic Fedora Hat</name>
+    <description>A timeless fedora hat, perfect for adding a vintage touch to any outfit</description>
+    <categories>
+      <category>Accessories</category>
+      <category>Vintage</category>
+      <category>Hats</category>
+    </categories>
+    <price>$25</price>
+    <sizes>
+      <size>Small/Medium</size>
+      <size>Large/X-Large</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Vintage Inspired Wall Clock</name>
+    <description>A decorative wall clock with a vintage design, a perfect addition to any room</description>
+    <categories>
+      <category>Home Decor</category>
+      <category>Vintage</category>
+      <category>Clocks</category>
+    </categories>
+    <price>$35</price>
+    <sizes>
+      <size>One Size</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Retro Diner Booth Set</name>
+    <description>A set of retro-style diner booths, bringing back the classic 1950s vibe</description>
+    <categories>
+      <category>Furniture</category>
+      <category>Vintage</category>
+      <category>Dining</category>
+    </categories>
+    <price>$500</price>
+    <sizes>
+      <size>2-Seater</size>
+      <size>4-Seater</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Vintage Floral Silk Scarf</name>
+    <description>A luxurious silk scarf featuring vintage floral patterns, adding elegance to any outfit</description>
+    <categories>
+      <category>Accessories</category>
+      <category>Vintage</category>
+      <category>Fashion</category>
+    </categories>
+    <price>$30</price>
+    <sizes>
+      <size>One Size</size>
+    </sizes>
+  </product>
+
+  <product>
+    <name>Classic Record Player Console</name>
+    <description>A vintage-style record player console with a modern twist, perfect for vinyl enthusiasts</description>
+    <categories>
+      <category>Electronics</category>
+      <category>Vintage</category>
+      <category>Music</category>
+    </categories>
+    <price>$300</price>
+    <sizes>
+      <size>One Size</size>
+    </sizes>
+  </product>
+
+</products>

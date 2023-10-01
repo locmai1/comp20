@@ -1,0 +1,72 @@
+products {
+  width: 60%; 
+  margin: 100px auto 100px auto; 
+  min-height: 200px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+product {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  background-color: #FDF3E7;
+}
+
+product name {
+  font-size: xx-large;
+  font-weight: 800;
+  color: #4C3939;
+}
+
+product description {
+  margin-top: 5px;
+  color: #758F5F;
+  font-size: large;
+}
+
+sizes {
+  display: inline-block;
+  margin-top: 3px;
+  color: #4C3939;
+  font-weight: 700;
+}
+
+sizes:before {
+  content: "Sizes Available: ";
+}
+
+sizes size {
+  padding: 5px;
+  background-color: #DAA6A6;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+price:before {
+  content: "Price: ";
+  color: #4C3939;
+  font-weight: 700;
+}
+
+price {
+  margin-top: 30px;
+  color: #758F5F;
+  font-weight: 400;
+}
+
+categories {
+  margin-top: 15px;
+  color: #4C3939;
+}
+
+categories category {
+  padding: 5px;
+  background-color: #E3B74E;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+
