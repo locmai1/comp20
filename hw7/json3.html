@@ -38,7 +38,9 @@
         $('.filter-btn').click(() => {
           var selectedCategory = $('.categories').val();
           var filteredProducts = products.filter((product) => {
-            return product.categories.includes(selectedCategory);
+            var matchedProducts = product.categories.includes(selectedCategory);
+            
+            return matchedProducts;
           });
           var productDetails = "";
 
