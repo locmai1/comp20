@@ -76,6 +76,13 @@
       "categories": ["Electronics", "Vintage", "Audio"],
       "price": "$80",
       "sizes": ["One Size"]
-    }
+    },
+    {
+      "name": "Vintage-inspired Leather Armchair",
+      "description": "A classic leather armchair with a vintage touch, perfect for adding elegance to any room",
+      "categories": ["Furniture", "Vintage", "Seating", "Home Decor"],
+      "price": "$350",
+      "sizes": ["One Size"]
+    }    
   ]
 }
