@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <div class="products"></div>
+ <script>
+    var products = {
+      "products": [
+        {
+          "name": "Vintage Striped Button-Up Shirt",
+          "description": "A stylish button-up shirt featuring classic stripes and a vintage look",
+          "categories": ["Clothing", "Vintage", "Casual"],
+          "price": "$45",
+          "sizes": ["Small", "Medium", "Large"]
+        },
+        {
+          "name": "Antique Brass Table Lamp",
+          "description": "An elegant table lamp with an antique brass finish, adding a vintage touch to any room",
+          "categories": ["Home Decor", "Vintage", "Lighting"],
+          "price": "$70",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Retro Polaroid Camera",
+          "description": "A vintage-inspired instant camera for capturing memories in the iconic Polaroid style",
+          "categories": ["Electronics", "Vintage", "Photography"],
+          "price": "$100",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Classic Fedora Hat",
+          "description": "A timeless fedora hat, perfect for adding a vintage touch to any outfit",
+          "categories": ["Accessories", "Vintage", "Hats"],
+          "price": "$25",
+          "sizes": ["Small/Medium", "Large/X-Large"]
+        },
+        {
+          "name": "Vintage Inspired Wall Clock",
+          "description": "A decorative wall clock with a vintage design, a perfect addition to any room",
+          "categories": ["Home Decor", "Vintage", "Clocks"],
+          "price": "$35",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Retro Diner Booth Set",
+          "description": "A set of retro-style diner booths, bringing back the classic 1950s vibe",
+          "categories": ["Furniture", "Vintage", "Dining"],
+          "price": "$500",
+          "sizes": ["2-Seater", "4-Seater"]
+        },
+        {
+          "name": "Vintage Floral Silk Scarf",
+          "description": "A luxurious silk scarf featuring vintage floral patterns, adding elegance to any outfit",
+          "categories": ["Accessories", "Vintage", "Fashion"],
+          "price": "$30",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Classic Record Player Console",
+          "description": "A vintage-style record player console with a modern twist, perfect for vinyl enthusiasts",
+          "categories": ["Electronics", "Vintage", "Music"],
+          "price": "$300",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Antique Leather Armchair",
+          "description": "A comfortable antique leather armchair with a classic design",
+          "categories": ["Furniture", "Vintage", "Seating"],
+          "price": "$400",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Vintage Leather Briefcase",
+          "description": "A stylish vintage leather briefcase, perfect for professionals",
+          "categories": ["Accessories", "Vintage", "Bags"],
+          "price": "$50",
+          "sizes": ["One Size"]
+        },
+        {
+          "name": "Retro Boombox Speaker",
+          "description": "A retro-style boombox speaker for a nostalgic music experience",
+          "categories": ["Electronics", "Vintage", "Audio"],
+          "price": "$80",
+          "sizes": ["One Size"]
+        }
+      ]
+    }
+
+    var productsString = JSON.stringify(products);
+    var productsDiv = document.getElementsByClassName("products")[0];
+    productsDiv.innerHTML = productsString;
+  </script>
+</body>
+</html>

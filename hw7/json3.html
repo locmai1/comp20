@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <form>
+      <span>Filter by Category</span>
+      <select class="categories">
+        <option>Select a category</option>
+      </select>
+      <button class="filter-btn" type="button">Filter</button>
+  </form>
+  <div class="products"></div>
+
+  <script>
+    $(document).ready(() => {
+      $.get("products.json", (data) => {
+        var products = data.products;
+        var categories = [];
+
+        $.each(products, (i, product) => {
+          $.each(product.categories, (j, category) => {
+            if ($.inArray(category, categories) === -1) {
+              categories.push(category);
+
+              $('.categories').append($('<option>', {
+                text: category,
+                value: category
+              }));
+            }
+          });
+        });
+
+        $('.filter-btn').click(() => {
+          var selectedCategory = $('.categories').val();
+          var filteredProducts = products.filter((product) => {
+            return product.categories.includes(selectedCategory);
+          });
+          var productDetails = "";
+
+          $.each(filteredProducts, (i, product) => {
+            productDetails += "<div class='product'>";
+            productDetails += "<h1>"+product.name+"</h1>";
+            productDetails += "<p>"+product.description+"</p>";
+            productDetails += "<p>Price: "+product.price+"</p>";
+            productDetails += "<p>Sizes: "+product.sizes.join(", ")+"</p>";
+            productDetails += "<p>Categories: "+product.categories.join(", ")+"</p>";
+            productDetails += "</div>";
+          });
+
+          $('.products').html(productDetails);
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .product {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+</body>
+</html>

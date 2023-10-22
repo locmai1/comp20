@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="products"></div>
+
+  <script>
+    $.get("./products.json", (data) => {
+      var products = data.products;
+      var productsDiv = document.getElementsByClassName("products")[0];
+
+      products.forEach((product) => {
+        var productDiv = document.createElement("div");
+        productDiv.classList.add("product");
+        productDiv.innerHTML = `
+          <h1>${product.name}</h1>
+          <p>${product.description}</p>
+          <p>Price: ${product.price}</p>
+          <p>Sizes: ${product.sizes.join(", ")}</p>
+          <p>Categories: ${product.categories.join(", ")}</p>
+        `;
+        productsDiv.appendChild(productDiv);
+      });
+    });
+  </script>
+
+  <style>
+    .product {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
+    }
+  </style>
+</body>
+</html>
