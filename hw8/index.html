@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Punerator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="Container">
+    <h1>Punerator</h1>
+    <h4>Enter a keyword to get filtered jokes or press Generate to get a random joke</h4>
+    <form id="JokeForm">
+      <input type="text" id="keyword" placeholder="Enter a keyword">
+      <button type="submit">Generate</button>
+    </form>
+    <div id="JokeContainer">
+    </div>
+  </div>
+  <div class="QuestionAnswerContainer">
+    <!-- 
+       describe the API you selected and what it does
+       cite the website where you found it
+       describe the options/parameters you used for the API request – i.e., what info did you need to provide (in the query string) to the API to get your results?
+       give two applications where this API would be helpful.
+    -->
+    <p class="Question">Describe the API you selected and what it does</p>
+    <p class="Answer">This uses the icanhazdadjoke API which allows users to fetch a variety of dad jokes!</p>
+    <p class="Question">Cite the website where you found it</p>
+    <p class="Answer"><a href="https://icanhazdadjoke.com/api#calling-the-api">https://icanhazdadjoke.com/api#calling-the-api</a></p>
+    <p class="Question">Describe the options/parameters you used for the API request</p>
+    <p class="Answer">I used the term parameters which when set, requests all dad jokes with that term. This is represented above by the keyword input and makes an API request to the API with the query string: ?term=keyword</p>
+    <p class="Question">Give two applications where this API would be helpful</p>
+    <p class="Answer">This API can be helpful for chatbots like if the user wanted a joke, the chatbot can make a request to this API</p>
+    <p class="Answer">This API can also be helpful for social media pages about dad jokes. This API would allow them to have content to post</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
