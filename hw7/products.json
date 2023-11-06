@@ -26,7 +26,7 @@
       "description": "A timeless fedora hat, perfect for adding a vintage touch to any outfit",
       "categories": ["Accessories", "Vintage", "Hats"],
       "price": "$25",
-      "sizes": ["Small/Medium", "Large/X-Large"]
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
     },
     {
       "name": "Vintage Inspired Wall Clock",
