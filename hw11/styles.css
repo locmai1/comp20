@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.MenuItems {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 800px;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+select {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.OrderForm {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px auto;
+  width: 800px;
+}
+
+.OrderForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
