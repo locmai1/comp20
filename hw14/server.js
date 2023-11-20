@@ -5,7 +5,7 @@ const mongo = require("mongodb");
 const app = express();
 const port = 5500;
 const uri =
-  "mongodb+srv://lmai:lmai@cluster0.nq5tg7n.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://<user>:<password>@<cluster_link>/?retryWrites=true&w=majority";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 

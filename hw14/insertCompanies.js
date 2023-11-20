@@ -5,7 +5,7 @@ var fs = require("fs");
 // Create a new MongoClient
 var MongoClient = mongo.MongoClient;
 const uri =
-  "mongodb+srv://lmai:lmai@cluster0.nq5tg7n.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://<user>:<password>@<cluster_link>/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 async function insertCompany(line, db) {
