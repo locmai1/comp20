@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Ticker App</title>
+</head>
+<body>
+  <h1>Lookup Stock Information</h1>
+  <form action="/lookup" method="post">
+    <label for="input">Search:</label>
+    <input type="text" name="input" required>
+
+    <p>What Type of Input:</p>
+    <input type="radio" name="type" value="symbol" checked>
+    <label for="symbol">Stock Ticker</label>
+
+    <input type="radio" name="type" value="company">
+    <label for="company">Company Name</label>
+
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
